@@ -1,0 +1,6 @@
+create table EMP_CH
+	( ID NUMBER(10)
+	, EMP_NUM NUMBER(6)
+	, CHANGE_NAME CHAR(20)
+	, CHANGE_DATE DATE
+	);

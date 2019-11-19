@@ -1,0 +1,108 @@
+/*
+label{
+  width: 70%;
+  float: left;
+  box-sizing: border-box;
+}
+input[type=text]{
+  width: 40%;
+  clear: left;
+  float: left;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 40%;
+  background-color: #f0c250;
+  color: black;
+  clear: left;
+  float: left;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type=submit]:hover {
+  background-color: #f0d230;
+}
+
+div {
+  clear: left;
+  float: left;
+  border-radius: 5px;
+  background-color: #f5c2f0;
+  padding: 20px;
+}
+*/
+h3 {
+    text-align:  center;
+    font-size: 15pt;
+    text-shadow: 1px 1px pink;
+    color: purple;
+    
+}
+form {
+  display: grid;
+  padding: 1em;
+  background: #f9f9f9;
+  border: 1px solid #c1c1c1;
+  margin: 2rem auto 0 auto;
+  max-width: 600px;
+  padding: 1em;
+}
+form input {
+  background: #fff;
+  border: 1px solid #9c9c9c;
+}
+form button {
+  background: lightsalmon;
+  padding: 0.7em;
+  width: 100%;
+  border: 0;
+}
+form button:hover {
+  background: lightgreen;
+}
+
+label {
+  padding: 0.5em 0.5em 0.5em 0;
+  color: black;
+}
+
+input {
+  padding: 0.7em;
+  margin-bottom: 1px;
+}
+input:focus {
+  outline: 3px solid pink;
+}
+
+@media (min-width: 400px) {
+  form {
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+  }
+
+  label {
+    text-align: right;
+    grid-column: 1 / 2;
+  }
+
+  input,
+  button,
+  .error{
+    grid-column: 2 / 3;
+  }
+}
+.error { color: lightcoral;
+         margin-top: 1px;
+         margin-bottom: 1px;
+}
